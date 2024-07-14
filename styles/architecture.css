@@ -89,6 +89,55 @@ nav li a {
 
 
 
+/* team-section styles */
+
+main {
+
+    max-width: 1440px;
+    margin: 0, auto;
+}
+
+.team-section {
+    display: flex;
+    align-items: center;
+}
+
+.team-image {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    size: 25px;
+    gap: 24px;
+
+}
+
+.team-text-container {
+
+    padding-left: 73px;
+    padding-right: 367px;
+}
+
+.text-feature {
+
+    font-size: 45px;
+    font-weight: 700;
+}
+.quick-list{
+  color: rgb(114, 114, 114);
+  font-weight:500 ;
+    
+}
+.Of-our-text{
+    color: rgb(19, 19, 19);
+}
+.feature-txt{
+    color: rgb(255, 144, 14);
+}
+
+
+
+
+
 /* responsive styles */
 
 @media screen and (max-width: 576px) {
@@ -114,9 +163,27 @@ nav li a {
 
     .banner img {
         width: 100%;
-        margin-top: 10px; 
-        align-items: center;/* Adjust margin for smaller devices */
+        margin-top: 10px;
+        align-items: center;
+
     }
 
 
 }
+
+
+/* tablet or mideum device responsisve  */
+@media screen and (min-width:576px) (max-width: 960px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-content {
+        max-width: 100%;
+        /* Use full width */
+        text-align: center;
+        margin-left: 15px;
+        /* Add side margins for spacing */
+        margin-right: 15px;
+    }
